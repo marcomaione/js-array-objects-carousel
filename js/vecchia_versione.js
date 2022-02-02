@@ -32,18 +32,19 @@ let item = '';
 let thumb = '';
 let active = 1;
 
-for (let i = 0; i < items.length; i++) {
+for (let key in items) { 
+    console.log(items [key]);
     item += `
         <div class="item">
-            <img src="${items[i]}" alt="">
+            <img src="${items[key]}" alt="">
             <div class="text">
-                <h3>${title[i]}</h3>
-                <p>${text[i]}</p>
+                <h3>${items[key]}</h3>
+                <p>${items[key]}</p>
             </div>
         </div>`
     thumb += `
         <div class="thumb">
-            <img src="${items[i]}" alt="">
+            <img src="${items[key]}" alt="">
         </div>
     `
 }
