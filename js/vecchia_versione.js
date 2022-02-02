@@ -36,15 +36,15 @@ for (let key in items) {
     console.log(items [key]);
     item += `
         <div class="item">
-            <img src="${items[key]}" alt="">
+            <img src="${items[key].photo}" alt="">
             <div class="text">
-                <h3>${items[key]}</h3>
-                <p>${items[key]}</p>
+                <h3>${items[key].title}</h3>
+                <p>${items[key].text}</p>
             </div>
         </div>`
     thumb += `
         <div class="thumb">
-            <img src="${items[key]}" alt="">
+            <img src="${items[key].photo}" alt="">
         </div>
     `
 }
